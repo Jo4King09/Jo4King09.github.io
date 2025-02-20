@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cum hermana chica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio class="song1"loop>
+        <source src="canción para mirar el techo y cuestionar tu existencia... - steven fan.mp3">
+    </audio>
+    
+    <h1 class="birthday-title">¡Feliz cumpleaños, Pía! 🎉</h1>
+    <div class="collage-container">
+        <div class="collage">
+            <div class="collage-track">
+                <img src="1.png" alt="Imagen 1">
+                <img src="2.jpeg" alt="Imagen 2">
+                <video src="10.mp4" autoplay loop muted></video>
+                <img src="3.jpeg" alt="Imagen 3">
+                <img src="4.jpeg" alt="Imagen 4">
+                <img src="5.jpeg" alt="Imagen 5">
+                <img src="6.jpeg" alt="Imagen 6">
+                <img src="8.jpeg" alt="Imagen 8">
+                <img src="9.png" alt="Imagen 9">
+                <img src="11.jpeg" alt="Imagen 11">
+                <img src="12.png" alt="Imagen 12">
+                <img src="13.jpeg" alt="Imagen 13">
+                <video src="7.mp4" autoplay loop muted></video>
+                <img src="14.jpeg" alt="Imagen 14">
+                <img src="15.jpeg" alt="Imagen 15">
+                <img src="16.jpeg" alt="Imagen 16">
+                <img src="17.jpeg" alt="Imagen 17">
+                <img src="18.png" alt="Imagen 18">
+                <img src="19.png" alt="Imagen 19">
+                <img src="20.jpeg" alt="Imagen 20">
+                <img src="21.png" alt="Imagen 21">
+                <img src="22.png" alt="Imagen 22">
+                <img src="1.png" alt="Imagen 1">
+                <img src="2.jpeg" alt="Imagen 2">
+                <video src="10.mp4" autoplay loop muted></video>
+                <img src="3.jpeg" alt="Imagen 3">
+                <img src="4.jpeg" alt="Imagen 4">
+                <img src="5.jpeg" alt="Imagen 5">
+                <img src="6.jpeg" alt="Imagen 6">
+                <img src="8.jpeg" alt="Imagen 8">
+                <img src="9.png" alt="Imagen 9">
+                <img src="11.jpeg" alt="Imagen 11">
+                <img src="12.png" alt="Imagen 12">
+                <img src="13.jpeg" alt="Imagen 13">
+                <video src="7.mp4" autoplay loop muted></video>
+                <img src="14.jpeg" alt="Imagen 14">
+                <img src="15.jpeg" alt="Imagen 15">
+                <img src="16.jpeg" alt="Imagen 16">
+                <img src="17.jpeg" alt="Imagen 17">
+                <img src="18.png" alt="Imagen 18">
+                <img src="19.png" alt="Imagen 19">
+                <img src="20.jpeg" alt="Imagen 20">
+                <img src="21.png" alt="Imagen 21">
+                <img src="22.png" alt="Imagen 22">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        var audio = document.querySelector('.song1');
+        
+        // Asegurarse de que el audio está silenciado al principio
+        audio.muted = true;
+        
+        // Iniciar la reproducción del audio
+        audio.play().then(() => {
+            // Ajustar el volumen después de la reproducción
+            audio.volume = 0.2;
+            audio.muted = false; // Desactivar el silencio una vez que haya comenzado
+        }).catch((error) => {
+            console.log('No se pudo reproducir el audio automáticamente:', error);
+        });
+    };
+</script>
+</html>
